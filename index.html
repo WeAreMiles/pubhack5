@@ -249,19 +249,24 @@
 
     $(".card").click(function(e){
         e.preventDefault();
+
         var clicked_card_name = $(this).attr('data-name');
-          if (selected_items && selected_items.length >= 2) {
-            //warn user?
+          if (selected_items && selected_items.indexOf(clicked_card_name) >=0) {
+            var index = selected_items.indexOf(clicked_card_name);
+
+             selected_items.splice(index, 1);
+
+             $(this).removeClass('selected');
           }
-          else if (selected_items && selected_items.indexOf(clicked_card_name) >=0){
-            selected_items.splice(selected_items.indexOf(clicked_card_name), 1);
+          else if (selected_items && selected_items.length >= 2){
+
           }
           else {
+
             selected_items.push(clicked_card_name);
+            $(this).addClass('selected');
           }
 
-          console.log(selected_items);
-          $(e.currentTarget).toggleClass("flip");
     });
 
         $('#go-button').click(function(e){
@@ -269,6 +274,8 @@
           //animate bigger
           //fade out background
           //wait
+
+          $(e.currentTarget).toggleClass("flip");
 
         });
     </script>
