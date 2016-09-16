@@ -10,11 +10,45 @@
 
     </header>
     <div class="main-wrapper">
+      <a href="#" class="card" data-name="jesus">Jesus</a>
+      <a href="#" class="card" data-name="devil">Devil</a>
+      <a href="#" class="card" data-name="batman">Batman</a>
+      <a href="#" class="card" data-name="the-joker">The Joker</a>
+      <a href="#" class="card" data-name="trump">Trump</a>
+      <a href="#" class="card" data-name="mexicans">Mexicans</a>
+      <a href="#" class="card" data-name="brexitiers">Brexitiers</a>
+      <a href="#" class="card" data-name="remainers">Remainers</a>
+      <a href="#" class="card" data-name="taylor-swift">Taylor Swift</a>
+      <a href="#" class="card" data-name="kanye">Kanye</a>
+      <a href="#" class="card" data-name="the-starks">The Starks</a>
+      <a href="#" class="card" data-name="the-lannisters">The Lannisters</a>
+      <a href="#" class="card" data-name="justin-bieber">Justin Bieber</a>
+      <a href="#" class="card" data-name="selena-gomez">Selena Gomez</a>
+      <a href="#" class="card" data-name="lemongrab">Lemongrab</a>
+      <a href="#" class="card" data-name="finn">Finn</a>
+
+      <a href="#" id="go-button">Fight!</a>
 
     </div>
     <footer>
 
     </footer>
+    <script src="script.js"/>
+    <script type="text/javascript">
+    var selected_items;
+    var card = document.getElementsByClassName('card');
+    card.onclick = function (e) {
+      e.preventDefault();
+      //if selecteditems has 2 items do nothing
+      //if clicked item is already in selecteditems, remove from selecteditems
+      //else add to selecteditems
+    };
+    var go = document.getElementByID('go-button');
+    go.onclick = function (e) {
+      e.preventDefault();
+      //animate large
+      //fight
+    };
+    </script>
 </body>
-<script src="script.js"/>
 </html>
