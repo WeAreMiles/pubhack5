@@ -796,7 +796,7 @@ body::after {
 }
 #quote {
   position:absolute;
-  top:50%;
+  top:32%;
   left:50%;
   margin-top: -150px;
   margin-left: -300px;
