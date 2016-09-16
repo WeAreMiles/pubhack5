@@ -594,15 +594,3 @@ body {
   -webkit-transition: background 0.5s;
   transition: background 0.5s;
 }
-
-.mememe {
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 10px;
-}
-.mememe a {
-  color: #eeff44;
-}
-.mememe a:visited {
-  color: #eeff44;
-}
