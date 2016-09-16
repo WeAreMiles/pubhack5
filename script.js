@@ -1,5 +1,30 @@
 var characters = [
-    {   'name': 'Jesus',
+    {   name: 'Jesus',
+        nicename: 'Jesus Christ',
+        powers: [10, 20, 30, 40]
+    },
+    {
+        name: 'Devil',
+        nicename: 'Satan',
+        powers: [5, 25, 28, 35]
+    },
+    {
+        name: 'Batman',
+        nicename: 'Batman',
+        powers: [5, 25, 28, 35]
+    },
+    {
+        name: 'Joker',
+        nicename: 'The Joker',
+        powers: [10, 20, 30, 40]
+    },
+    {
+        name: 'Trump',
+        nicename: 'Donald Trump'
+        powers: [10, 20, 30, 40]
+    },
+    {
+        name: 'Taylor-Swift',
         'fighting ability': '',
         'scariness': '',
         'intelligence': '',
@@ -8,7 +33,7 @@ var characters = [
         'fashion sense': ''
     },
     {
-        'name': 'Devil',
+        name: 'Kanye',
         'fighting ability': '',
         'scariness': '',
         'intelligence': '',
@@ -17,7 +42,26 @@ var characters = [
         'fashion sense': ''
     },
     {
-        'name': 'Batman',
+        name: 'The-Starks',
+        nicename: 'The Stark Family',
+        powers: [10, 20, 30, 40]
+
+    },
+    {
+        name: 'The-Lannisters',
+        nicename: 'The Lannister Family',
+        powers: [10, 20, 30, 40]
+
+    },
+    {
+        name: 'J-Bieber',
+        nicename: 'Bieber',
+        powers: [10, 20, 30, 40]
+
+    },
+  
+    {
+        name: 'Lemon-Grab',
         'fighting ability': '',
         'scariness': '',
         'intelligence': '',
@@ -26,114 +70,7 @@ var characters = [
         'fashion sense': ''
     },
     {
-        'name': 'Joker',
-        'fighting ability': '',
-        'scariness': '',
-        'intelligence': '',
-        'social media prowess': '',
-        'bullshit-o-meter': '',
-        'fashion sense': ''
-    },
-    {
-        'name': 'Trump',
-        'fighting ability': '',
-        'scariness': '',
-        'intelligence': '',
-        'social media prowess': '',
-        'bullshit-o-meter': '',
-        'fashion sense': ''
-    },
-    {   'name': 'Mexicans',
-        'fighting ability': '',
-        'scariness': '',
-        'intelligence': '',
-        'social media prowess': '',
-        'bullshit-o-meter': '',
-        'fashion sense': ''
-    },
-    {
-        'name': 'Brexitiers',
-        'fighting ability': '',
-        'scariness': '',
-        'intelligence': '',
-        'social media prowess': '',
-        'bullshit-o-meter': '',
-        'fashion sense': ''
-    },
-    {
-        'name': 'Remainers',
-        'fighting ability': '',
-        'scariness': '',
-        'intelligence': '',
-        'social media prowess': '',
-        'bullshit-o-meter': '',
-        'fashion sense': ''
-    },
-    {
-        'name': 'Taylor-Swift',
-        'fighting ability': '',
-        'scariness': '',
-        'intelligence': '',
-        'social media prowess': '',
-        'bullshit-o-meter': '',
-        'fashion sense': ''
-    },
-    {
-        'name': 'Kanye',
-        'fighting ability': '',
-        'scariness': '',
-        'intelligence': '',
-        'social media prowess': '',
-        'bullshit-o-meter': '',
-        'fashion sense': ''
-    },
-    {
-        'name': 'The-Starks',
-        'fighting ability': '',
-        'scariness': '',
-        'intelligence': '',
-        'social media prowess': '',
-        'bullshit-o-meter': '',
-        'fashion sense': ''
-    },
-    {
-        'name': 'The-Lannisters',
-        'fighting ability': '',
-        'scariness': '',
-        'intelligence': '',
-        'social media prowess': '',
-        'bullshit-o-meter': '',
-        'fashion sense': ''
-    },
-    {
-        'name': 'J-Bieber',
-        'fighting ability': '',
-        'scariness': '',
-        'intelligence': '',
-        'social media prowess': '',
-        'bullshit-o-meter': '',
-        'fashion sense': ''
-    },
-    {
-        'name': 'S-Gomez',
-        'fighting ability': '',
-        'scariness': '',
-        'intelligence': '',
-        'social media prowess': '',
-        'bullshit-o-meter': '',
-        'fashion sense': ''
-    },
-    {
-        'name': 'Lemon-Grab',
-        'fighting ability': '',
-        'scariness': '',
-        'intelligence': '',
-        'social media prowess': '',
-        'bullshit-o-meter': '',
-        'fashion sense': ''
-    },
-    {
-        'name': 'Finn',
+        name: 'Finn',
         'fighting ability': '',
         'scariness': '',
         'intelligence': '',
