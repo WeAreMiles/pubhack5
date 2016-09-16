@@ -470,14 +470,25 @@ body {
           user-select: none;
   cursor: pointer;
   font-family: Arial, Sans-Serif;
-  width: 25%;
+  width: 24%;
   height: 600px;
   color: white;
   display: inline-block;
   margin: 10px;
   transform: scale(1,1);
   transition: transform 1s ease;
+
+  float: left;
 }
+
+.card + .card {
+    margin-left: 1.33%;
+}
+
+.card:nth-child(4n+1){
+    margin-left: 0;
+}
+
 .card.flip {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
