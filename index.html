@@ -250,7 +250,9 @@
 
     $(".card").click(function(e){
         e.preventDefault();
-        //$(this).toggleClass('flip');
+
+        // $(this).toggleClass('flip');
+        // $(this).toggleClass('selected');
 
         var clicked_card_name = $(this).attr('data-name');
           if (selected_items && selected_items.indexOf(clicked_card_name) >=0) {

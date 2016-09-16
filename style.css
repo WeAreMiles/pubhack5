@@ -451,8 +451,12 @@ body {
   text-align: center;
   margin: 0;
   padding: 0;
-  width: 90%;
   margin: 0 auto;
+}
+
+.main-wrapper{
+    width: 80%;
+    margin: 0px auto;
 }
 
 .card {
@@ -471,7 +475,7 @@ body {
   cursor: pointer;
   font-family: Arial, Sans-Serif;
   width: 24%;
-  height: 600px;
+  padding-top: 36%;
   color: white;
   display: inline-block;
   margin: 10px;
@@ -479,10 +483,12 @@ body {
   transition: transform 1s ease;
 
   float: left;
+  margin-top: 1.5%;
 }
 
 .card + .card {
     margin-left: 1.33%;
+    margin-top: 1.5%;
 }
 
 .card:nth-child(4n+1){
@@ -592,6 +598,10 @@ body {
   background-position: 20% 30%;
   -webkit-transition: background 0.5s;
   transition: background 0.5s;
+}
+
+.card.selected{
+    box-shadow: 0px 0px 50px #fff;
 }
 
 .card .front {
