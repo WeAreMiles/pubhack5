@@ -786,6 +786,7 @@ body::after {
   z-index: 9999;
   width: 600px;
   height: 300px;
+  background: url('images/winner.png') no-repeat;
 }
 #go-button{
     display: inline-block;
@@ -799,14 +800,27 @@ body::after {
   left:50%;
   margin-top: -150px;
   margin-left: -300px;
-  background: white;
+  background: transparent;
   display:none;
   z-index: 9999;
   width: 600px;
   height: 300px;
-  font-size: 20px;
+  font-size: 55px;
+  text-align: center;
+  font-family: 'Futura', Helvetiva, sans-serif;
+  color: white;
+  text-shadow: 1px 2px 3px #444;
+  line-height: 1.2;
+
+}
+#winner h2 {
+  margin-top: 140px;
+
 }
 
-#second-fight {
-  display: none;
+#winner h2 span {
+  color: white;
+  font-family: 'Futura', Helvetiva, sans-serif;
+  text-shadow: 1px 2px 3px #444;
+  font-size: 40px;
 }
