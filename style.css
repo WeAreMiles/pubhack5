@@ -666,11 +666,25 @@ body::after {
   position:absolute;
   top:50%;
   left:50%;
-  margin-top: -300px;
-  margin-left: -150px;
+  margin-top: -150px;
+  margin-left: -300px;
   background: white;
   display:none;
   z-index: 9999;
   width: 600px;
   height: 300px;
+}
+
+#quote {
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-top: -150px;
+  margin-left: -300px;
+  background: white;
+  display:none;
+  z-index: 9999;
+  width: 600px;
+  height: 300px;
+  font-size: 20px;
 }
