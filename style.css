@@ -824,3 +824,15 @@ body::after {
   text-shadow: 1px 2px 3px #444;
   font-size: 40px;
 }
+
+#second-fight {
+    display: none;
+    width: 356px;
+    height: 208px;
+    background-image: url('images/fight.png');
+}
+
+#second-fight.soActive{
+    display: inline-block;
+
+}

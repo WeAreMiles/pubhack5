@@ -204,6 +204,7 @@
     });
 
         $('#go-button').click(function(e){
+            $('#second-fight').toggleClass('soActive')
           e.preventDefault();
           if (selected_items && selected_items.length ==2) {
             $('.card:not(.selected)').fadeOut();
