@@ -33,10 +33,16 @@ var preloadables = [];
  */
 function update() {
   player.update();
-  
+
   if(player.collides(solid)){
       App.gameOver('HELLO');
   }
+
+    // (function(solid) {
+    //     if (player.collides(solid)) {
+    //   App.gameOver('fuck you');
+    // }
+    // })();
 
   // if(player.collideSolid(solid)){
   //     App.gameOver('fuck you');
@@ -50,8 +56,7 @@ function draw() {
   // Draw a background. This is just for illustration so we can see scrolling.
   context.drawCheckered(80, 0, 0, world.width, world.height);
   player.draw();
-  solid.draw(0,0);
-  // enemy.draw();
+  solid.draw();
 }
 
 /**
@@ -70,7 +75,7 @@ function setup(first) {
 
   // Initialize the player.
   player = new Player();
-  solid = new Box(world.height - Box.prototype.DEFAULT_HEIGHT, 400);
+  solid = new Box(100,100);
   solid.src = 'examples/images/grass2.png';
   // enemy = new Enemy();
 }
