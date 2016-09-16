@@ -447,11 +447,13 @@ body {
           perspective: 1500px;
   -webkit-perspective-origin: 50% 50%;
           perspective-origin: 50% 50%;
-  background-color: #242424;
+  background: url('bg.jpg') #242424 no-repeat;
+  background-size: 100% auto;
   text-align: center;
   margin: 0;
   padding: 0;
   margin: 0 auto;
+
 }
 
 .main-wrapper{
@@ -658,4 +660,17 @@ body::after {
   background: white;
   display:none;
   z-index: 99999;
+}
+
+#winner {
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-top: -300px;
+  margin-left: -150px;
+  background: white;
+  display:none;
+  z-index: 9999;
+  width: 600px;
+  height: 300px;
 }

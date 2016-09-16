@@ -10,7 +10,7 @@
 
 <body>
   <div id="overlay"></div>
-
+  <div id="winner">And the winner is: <span class="winner_name"></span></div>
     <div class="main-wrapper">
 
         <div class="card darth" data-name="Jesus">
@@ -281,6 +281,7 @@
             $('.card.large').removeClass('selected');
             $('#go-button').hide();
             $("html, body").animate({ scrollTop: 0 }, 500);
+
             setTimeout(function(){
               $('.card.large').addClass("flip");
             },750);
@@ -289,17 +290,45 @@
                 //perform animation and sound
                   setTimeout(function(){
                     $('#overlay').fadeOut();
+                    $('#winner span').html(calculateWinner() + '!');
+                    $('#winner').fadeIn();
                   }, 6000);
               });
             },5000);
-            //calculate winner
-            //show winner
           }
           else {
             alert('Please select 2 cards!!!');
           }
 
         });
+
+        function calculateWinner() {
+
+
+          if (selected_items.length == 2) {
+            var first_contender_name = selected_items[0];
+            var second_contender_name = selected_items[1];
+            var first_contender_powers = characters.find(x=> x.name === first_contender_name).powers;
+            var second_contender_powers = characters.find(x=> x.name === second_contender_name).powers;
+            var first_contender_nicename = characters.find(x=> x.name === first_contender_name).nicename;
+            var second_contender_nicename = characters.find(x=> x.name === second_contender_name).nicename;
+            var first_score = first_contender_powers.reduce((a, b) => a + b, 0);
+            var second_score = second_contender_powers.reduce((a, b) => a + b, 0);
+            if (first_score > second_score) {
+              return first_contender_nicename;
+            }
+            else if (first_score < second_score) {
+              return second_contender_nicename;
+            }
+            else {
+              return 'a draw'
+
+            }
+          }
+          else {
+            return 'a draw'
+          }
+        }
     </script>
 
 
