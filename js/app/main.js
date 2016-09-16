@@ -33,7 +33,14 @@ var preloadables = [];
  */
 function update() {
   player.update();
-  player.collideSolid(solid);
+  
+  if(player.collides(solid)){
+      App.gameOver('HELLO');
+  }
+
+  // if(player.collideSolid(solid)){
+  //     App.gameOver('fuck you');
+  // }
 }
 
 /**
@@ -43,7 +50,7 @@ function draw() {
   // Draw a background. This is just for illustration so we can see scrolling.
   context.drawCheckered(80, 0, 0, world.width, world.height);
   player.draw();
-  solid.draw();
+  solid.draw(0,0);
   // enemy.draw();
 }
 
@@ -59,14 +66,11 @@ function setup(first) {
   world.resize(canvas.width, canvas.height);
 
   // Switch from side view to top-down.
-  Actor.prototype.GRAVITY = true;
+  Actor.prototype.GRAVITY = false;
 
   // Initialize the player.
   player = new Player();
   solid = new Box(world.height - Box.prototype.DEFAULT_HEIGHT, 400);
-  var grid =  "  B      BB        \n" +
-            "         BBBBBB      \n" +
-            " BB    BBBBBBBBBB  BB";
-  solid = new TileMap(grid, {B: 'examples/images/grass2.png'});
+  solid.src = 'examples/images/grass2.png';
   // enemy = new Enemy();
 }
