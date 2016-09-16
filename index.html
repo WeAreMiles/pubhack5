@@ -9,7 +9,13 @@
 </head>
 
 <body>
-  <div id="overlay"></div>
+  <div id="overlay">
+    <div class="fightThing kapow"></div>
+    <div class="fightThing bam"></div>
+    <div class="fightThing thwack"></div>
+    <div class="fightThing smack"></div>
+    <div class="fightThing pow"></div>
+  </div>
 
     <div class="main-wrapper">
 
@@ -287,6 +293,7 @@
             setTimeout(function(){
               $('#overlay').fadeIn(function(){
                 //perform animation and sound
+                $('#overlay').addClass('beginAnim');
                   setTimeout(function(){
                     $('#overlay').fadeOut();
                   }, 6000);
