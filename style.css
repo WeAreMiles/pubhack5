@@ -451,7 +451,7 @@ body {
   text-align: center;
   margin: 0;
   padding: 0;
-  width: 900px;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -470,7 +470,7 @@ body {
           user-select: none;
   cursor: pointer;
   font-family: Arial, Sans-Serif;
-  width: 400px;
+  width: 25%;
   height: 600px;
   color: white;
   display: inline-block;
@@ -569,13 +569,13 @@ body {
 }
 .card .front {
   background-image: url(http://orig05.deviantart.net/a70d/f/2013/326/0/c/darth_vader_by_6kart-d6v8x3c.jpg);
-  background-size: 130%;
+  background-size: cover;
   background-position: 50% 50%;
   -webkit-transition: background 0.3s;
   transition: background 0.3s;
 }
 .card .front:hover {
-  background-size: 200%;
+  background-size: cover;
   background-position: 20% 30%;
   -webkit-transition: background 0.5s;
   transition: background 0.5s;
@@ -583,13 +583,13 @@ body {
 
 .card .front {
   background-image: url(http://pre07.deviantart.net/8aae/th/pre/i/2013/035/a/1/luke_skywalker_by_saturnoarg-d5ttl97.jpg);
-  background-size: 200%;
+  background-size: cover;
   background-position: 25% 20%;
   -webkit-transition: background 0.3s;
   transition: background 0.3s;
 }
 .luke .front:hover {
-  background-size: 300%;
+  background-size: cover;
   background-position: 50% 10%;
   -webkit-transition: background 0.5s;
   transition: background 0.5s;
