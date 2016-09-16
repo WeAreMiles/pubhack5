@@ -37,6 +37,7 @@ function update() {
   if(player.collides(solid)){
       App.gameOver('HELLO');
   }
+}
 
 /**
  * A magic-named function where all drawing should occur.
@@ -65,6 +66,6 @@ function setup(first) {
   // Initialize the player.
   player = new Player();
   solid = new Box(100,100);
-  solid.src = 'examples/images/grass2.png';
+  solid.src = '../examples/images/grass2.png';
   // enemy = new Enemy();
 }
