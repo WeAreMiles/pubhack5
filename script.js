@@ -20,7 +20,7 @@ var characters = [
     },
     {
         name: 'Trump',
-        nicename: 'Donald Trump'
+        nicename: 'Donald Trump',
         powers: [10, 20, 30, 40]
     },
     {
@@ -59,7 +59,7 @@ var characters = [
         powers: [10, 20, 30, 40]
 
     },
-  
+
     {
         name: 'Lemon-Grab',
         'fighting ability': '',
