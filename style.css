@@ -617,6 +617,11 @@ body{
   width: 100%;
   height: 100%;
 }
+body::after {
+  display: table;
+  clear:both;
+  content:'';
+}
 #overlay {
   width: 100%;
   height: 100%;
