@@ -559,7 +559,7 @@ body {
 }
 .card h2 {
   text-transform: uppercase;
-  font-size: 58px;
+  font-size: 40px;
   position: absolute;
   bottom: 70px;
   margin: 0;
@@ -567,7 +567,7 @@ body {
   padding: 10px;
 }
 .card h2 small {
-  font-size: 42px;
+  font-size: 40px;
 }
 .card cite {
   position: absolute;
@@ -586,7 +586,7 @@ body {
 }
 
 .card h2 {
-  font-size: 60px;
+  font-size: 40px;
   line-height: 0.75em;
   bottom: 80px;
 }
