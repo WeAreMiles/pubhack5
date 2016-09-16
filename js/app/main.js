@@ -36,7 +36,7 @@ function update() {
 
   if(player.collides(solid)){
       App.gameOver('HELLO');
-  }s
+  }
 
 /**
  * A magic-named function where all drawing should occur.
