@@ -651,15 +651,132 @@ body::after {
   clear:both;
   content:'';
 }
+
 #overlay {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   position:absolute;
   top:0;
   left:0;
-  background: white;
+  background: #242424;
   display:none;
   z-index: 99999;
+}
+
+.fightThing{
+    background-size: cover;
+    position: absolute;
+    transform: translate3d(0,0,0);
+    opacity: 0;
+}
+
+.kapow{
+    height: 26%;
+    width: 20%;
+    left: 5%;
+    top: 12%;
+    background-image: url('images/kapow.png');
+}
+
+.smack{
+    height: 23.5%;
+    width: 17.5%;
+    left: 40%;
+    top: 20%;
+    background-image: url('images/smack.png');
+}
+
+.bam{
+    height: 31.5%;
+    width: 22.5%;
+    bottom: 5%;
+    left: 25%;
+    background-image: url('images/bam.png');
+}
+
+.thwack{
+    height: 18%;
+    width: 30%;
+    right: 10%;
+    bottom: 10%;
+    background-image: url('images/thwack.png');
+}
+
+.pow{
+    height: 33%;
+    width: 25%;
+    right: 10%;
+    top: 10%;
+    background-image: url('images/pow.png');
+
+}
+
+
+
+#overlay.active .kapow{
+    /*transition: all 0.5s ease;*/
+    animation: doFightOne 2s 0.3s ease forwards;
+}
+
+#overlay.active .bam{
+    animation: doFightTwo 2s 1.7s ease forwards;
+}
+
+#overlay.active .thwack{
+    animation: doFightOne 2s 2.6s ease forwards;
+}
+
+#overlay.active .pow{
+    animation: doFightTwo 2s 4s ease forwards;
+}
+
+#overlay.active .smack{
+    animation: doFightOne 2s 5.2s ease forwards;
+}
+
+@keyframes doFightTwo{
+    0%{
+        opacity: 0;
+        transform: scale(1) rotate(0deg);
+    }
+    60%{
+        opacity: 1;
+        transform: scale(1.4) rotate(60deg);
+    }
+    75%{
+        opacity: 0.5;
+    }
+    90%{
+        transform: scale(0.5) rotate(-20deg);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(0.3) rotate(0);
+        opacity: 0;
+    }
+}
+
+@keyframes doFightOne{
+    0%{
+        opacity: 0;
+        transform: scale(1) rotate(0deg);
+    }
+    60%{
+        opacity: 1;
+        transform: ;
+        transform: scale(0.7) rotate(-60deg);
+    }
+    75%{
+        opacity: 0.5;
+    }
+    90%{
+        transform: scale(1.1) rotate(20deg);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(0.2) rotate(0);
+        opacity: 0;
+    }
 }
 
 #winner {
