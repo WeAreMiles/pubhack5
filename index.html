@@ -10,7 +10,6 @@
 
 <body>
 
-    </header>
     <div class="main-wrapper">
         <!-- <a href="#" class="card" data-name="jesus">Jesus</a>
       <a href="#" class="card" data-name="devil">Devil</a>
@@ -71,23 +70,33 @@
     </footer>
     <script type="text/javascript" src="script.js"></script>
     <script type="text/javascript">
-        var selected_items;
-        var card = document.getElementsByClassName('card');
-        card.onclick = function(e) {
-            e.preventDefault();
-            //if selecteditems has 2 items do nothing
-            //if clicked item is already in selecteditems, remove from selecteditems
-            //else add to selecteditems
-        };
-        var go = document.getElementById('go-button');
-        go.onclick = function(e) {
-            e.preventDefault();
-            //animate large
-            //fight
-        };
-        $(".card").click(function(e){
-            $(e.currentTarget).toggleClass("flip");
-        });
+    var selected_items;
+    var clicked_card;
+    var card = document.getElementsByClassName('card');
+    card.onclick = function (e) {
+      e.preventDefault();
+      clicked_card_name = this.getAttribute("data-name");
+      if (selected_items && selected_items.length >= 2) {
+        //warn user?
+      }
+      else if (selected_items.indexOf(clicked_card_name) >=0){
+        selected_items.splice(selected_items.indexOf(clicked_card_name), 1);
+      }
+      else {
+        selected_items.push(clicked_card_name);
+      }
+      console.log(selected_items);
+    };
+    var go = document.getElementById('go-button');
+    go.onclick = function (e) {
+      e.preventDefault();
+      //animate large
+      //flip card
+      //show catchphrase
+      //select 2 chars
+      //fight
+      //show win screen
+    };
     </script>
 
 
