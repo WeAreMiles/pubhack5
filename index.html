@@ -10,11 +10,11 @@
 
 <body>
   <div id="overlay">
-    <div class="fightThing kapow"></div>
-    <div class="fightThing bam"></div>
-    <div class="fightThing thwack"></div>
-    <div class="fightThing smack"></div>
-    <div class="fightThing pow"></div>
+      <div class="fightThing kapow"></div>
+      <div class="fightThing bam"></div>
+      <div class="fightThing thwack"></div>
+      <div class="fightThing smack"></div>
+      <div class="fightThing pow"></div>
   </div>
   <div id="winner">And the winner is: <span class="winner_name"></span></div>
     <div class="main-wrapper">
@@ -248,11 +248,15 @@
 
     </div>
     <footer>
-
+        <audio id="soundEffects">
+          <source src="effects.ogg" type="audio/ogg">
+        </audio>
     </footer>
     <script type="text/javascript" src="script.js"></script>
     <script type="text/javascript">
     var selected_items = [];
+
+    var soundEffects = new Audio('effects.ogg');
 
     $(".card").click(function(e){
         e.preventDefault();
@@ -294,7 +298,8 @@
             setTimeout(function(){
               $('#overlay').fadeIn(function(){
                 //perform animation and sound
-                $('#overlay').addClass('beginAnim');
+                $('#overlay').addClass('active');
+                soundEffects.play();
                   setTimeout(function(){
                     $('#overlay').fadeOut();
                     $('#winner span').html(calculateWinner() + '!');
@@ -340,5 +345,4 @@
 
 
 </body>
-
 </html>
