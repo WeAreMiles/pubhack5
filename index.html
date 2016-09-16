@@ -278,9 +278,10 @@
           if (selected_items && selected_items.length ==2) {
             $('.card:not(.selected)').fadeOut();
             $('.card.selected').addClass('large');
-
+            $('.card.large').removeClass('selected');
+            $('#go-button').hide();
             setTimeout(function(){
-              $(e.currentTarget).toggleClass("flip");
+              $('.card.large').addClass("flip");
             },750);
             setTimeout(function(){
               $('#overlay').fadeIn(function(){
