@@ -280,6 +280,7 @@
             $('.card.selected').addClass('large');
             $('.card.large').removeClass('selected');
             $('#go-button').hide();
+            $("html, body").animate({ scrollTop: 0 }, 500);
             setTimeout(function(){
               $('.card.large').addClass("flip");
             },750);

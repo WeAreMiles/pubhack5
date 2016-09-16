@@ -473,10 +473,10 @@ body {
   position: relative;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
-  transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-transition: -webkit-transform 0.5s, height 0.5s, width 0.5s;
+  transition: -webkit-transform 0.5s, height 0.5s, width 0.5s;
+  transition: transform 0.5s, height 0.5s, width 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s, height 0.5s, width 0.5s;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -487,8 +487,6 @@ body {
   padding-top: 36%;
   color: white;
   display: inline-block;
-  transform: scale(1,1);
-  transition: transform 1s ease;
   float: left;
   margin-top: 1.5%;
 }
@@ -625,8 +623,21 @@ body {
 }
 
 .card.large {
-  transform: scale(1.5, 1.5);
+  height: 600px;
+  width: 400px;
+  margin-top:100px;
+
 }
+
+.card.large:nth-of-type(2) {
+  float: right;
+}
+
+.card.large .face {
+  height: 600px;
+
+}
+
 
 body{
   position: relative;
