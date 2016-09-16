@@ -9,6 +9,7 @@
 </head>
 
 <body>
+  <div id="overlay"></div>
 
     <div class="main-wrapper">
 
@@ -271,11 +272,28 @@
 
         $('#go-button').click(function(e){
           e.preventDefault();
-          //animate bigger
-          //fade out background
-          //wait
+          if (selected_items && selected_items.length ==2) {
+            $('.card:not(.selected)').fadeOut();
+            //TODO:animate bigger
 
-          $(e.currentTarget).toggleClass("flip");
+            setTimeout(function(){
+              $(e.currentTarget).toggleClass("flip");
+            },750);
+            setTimeout(function(){
+              $('#overlay').fadeIn(function(){
+                //perform animation and sound
+
+                  setTimeout(function(){
+                    $('#overlay').fadeOut();
+                  }, 6000);
+              });
+            },1000);
+            //calculate winner
+            //show winner
+          }
+          else {
+            alert('Please select 2 cards!!!');
+          }
 
         });
     </script>
