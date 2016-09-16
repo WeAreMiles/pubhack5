@@ -274,7 +274,7 @@
           e.preventDefault();
           if (selected_items && selected_items.length ==2) {
             $('.card:not(.selected)').fadeOut();
-            //TODO:animate bigger
+            $('.card.selected').addClass('large');
 
             setTimeout(function(){
               $(e.currentTarget).toggleClass("flip");
@@ -282,7 +282,6 @@
             setTimeout(function(){
               $('#overlay').fadeIn(function(){
                 //perform animation and sound
-
                   setTimeout(function(){
                     $('#overlay').fadeOut();
                   }, 6000);
