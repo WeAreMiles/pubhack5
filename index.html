@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Heroes Vs Villains</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 </head>
+
 <body>
 
-<<<<<<< HEAD
     </header>
     <div class="main-wrapper">
-      <a href="#" class="card" data-name="jesus">Jesus</a>
+        <!-- <a href="#" class="card" data-name="jesus">Jesus</a>
       <a href="#" class="card" data-name="devil">Devil</a>
       <a href="#" class="card" data-name="batman">Batman</a>
       <a href="#" class="card" data-name="the-joker">The Joker</a>
@@ -25,9 +27,43 @@
       <a href="#" class="card" data-name="justin-bieber">Justin Bieber</a>
       <a href="#" class="card" data-name="selena-gomez">Selena Gomez</a>
       <a href="#" class="card" data-name="lemongrab">Lemongrab</a>
-      <a href="#" class="card" data-name="finn">Finn</a>
-
-      <a href="#" id="go-button">Fight!</a>
+      <a href="#" class="card" data-name="finn">Finn</a> -->
+        <div class="card darth">
+            <div class="face front">
+                <img class="logo" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/261096/Star_Wars_Logo.svg" />
+                <h2>
+                    <small>Darth</small>
+                    <br/>Vader</h2>
+                <cite>
+                    <a href="http://6kart.deviantart.com/art/Darth-Vader-415281288" target="_blank">Vader Image by 6Kart</a>
+                </cite>
+            </div>
+            <div class="face back">
+                <img src="http://img.lum.dolimg.com/v1/images/Darth-Vader_6bda9114.jpeg?region=0%2C23%2C1400%2C785&width=768" alt="Image of Darth Vader" />
+                <div class="description">Once a heroic Jedi Knight, <b>Darth Vader</b> was seduced by the dark side of the Force, became a Sith Lord, and led the Empire’s eradication of the Jedi Order. He remained in service of the Emperor -- the evil Darth Sidious -- for decades,
+                    enforcing his Master’s will and seeking to crush the fledgling Rebel Alliance. But there was still good in him…</div>
+                <img class="logo" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/261096/Star_Wars_Logo.svg" />
+            </div>
+        </div>
+        <div class="card luke">
+            <div class="face front">
+                <img class="logo" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/261096/Star_Wars_Logo.svg" />
+                <h2>
+                    <small>Luke</small>
+                    <br/>Skywalker</h2>
+                <cite>
+                    <a href="http://salvadortrakal.deviantart.com/art/Luke-Skywalker-352420315" target="_blank">Luke Image by SalvadorTrakal</a>
+                </cite>
+            </div>
+            <div class="face back">
+                <img src="http://img.lum.dolimg.com/v1/images/Luke-Skywalker_dd9c9f9b.jpeg?region=0%2C0%2C1536%2C864&width=768" alt="Image of luke skywalker" />
+                <div class="description">
+                    <b>Luke Skywalker</b> was a Tatooine farmboy who rose from humble beginnings to become one of the greatest Jedi the galaxy has ever known. Along with his friends Princess Leia and Han Solo, Luke battled the evil Empire, discovered
+                    the truth of his parentage, and ended the tyranny of the Sith.</div>
+                <img class="logo" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/261096/Star_Wars_Logo.svg" />
+            </div>
+        </div>
+        <a href="#" id="go-button">Fight!</a>
 
     </div>
     <footer>
@@ -35,22 +71,26 @@
     </footer>
     <script type="text/javascript" src="script.js"></script>
     <script type="text/javascript">
-    var selected_items;
-    var card = document.getElementsByClassName('card');
-    card.onclick = function (e) {
-      e.preventDefault();
-      //if selecteditems has 2 items do nothing
-      //if clicked item is already in selecteditems, remove from selecteditems
-      //else add to selecteditems
-    };
-    var go = document.getElementByID('go-button');
-    go.onclick = function (e) {
-      e.preventDefault();
-      //animate large
-      //fight
-    };
+        var selected_items;
+        var card = document.getElementsByClassName('card');
+        card.onclick = function(e) {
+            e.preventDefault();
+            //if selecteditems has 2 items do nothing
+            //if clicked item is already in selecteditems, remove from selecteditems
+            //else add to selecteditems
+        };
+        var go = document.getElementById('go-button');
+        go.onclick = function(e) {
+            e.preventDefault();
+            //animate large
+            //fight
+        };
+        $(".card").click(function(e){
+            $(e.currentTarget).toggleClass("flip");
+        });
     </script>
 
 
 </body>
+
 </html>
