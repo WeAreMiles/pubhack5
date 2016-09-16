@@ -588,7 +588,7 @@ body {
   -webkit-transition: background 0.3s;
   transition: background 0.3s;
 }
-.card .front:hover {
+.luke .front:hover {
   background-size: 300%;
   background-position: 50% 10%;
   -webkit-transition: background 0.5s;

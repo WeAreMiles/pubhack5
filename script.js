@@ -70,7 +70,7 @@ var characters = [
         'fashion sense': ''
     },
     {
-        'name': 'Taylor Swift',
+        'name': 'Taylor-Swift',
         'fighting ability': '',
         'scariness': '',
         'intelligence': '',
@@ -88,7 +88,7 @@ var characters = [
         'fashion sense': ''
     },
     {
-        'name': 'The Starks',
+        'name': 'The-Starks',
         'fighting ability': '',
         'scariness': '',
         'intelligence': '',
@@ -97,7 +97,7 @@ var characters = [
         'fashion sense': ''
     },
     {
-        'name': 'The Lannisters',
+        'name': 'The-Lannisters',
         'fighting ability': '',
         'scariness': '',
         'intelligence': '',
@@ -106,7 +106,7 @@ var characters = [
         'fashion sense': ''
     },
     {
-        'name': 'J. Bieber',
+        'name': 'J-Bieber',
         'fighting ability': '',
         'scariness': '',
         'intelligence': '',
@@ -115,7 +115,7 @@ var characters = [
         'fashion sense': ''
     },
     {
-        'name': 'S. Gomez',
+        'name': 'S-Gomez',
         'fighting ability': '',
         'scariness': '',
         'intelligence': '',
@@ -124,7 +124,16 @@ var characters = [
         'fashion sense': ''
     },
     {
-        'name': 'Lemon Grab',
+        'name': 'Lemon-Grab',
+        'fighting ability': '',
+        'scariness': '',
+        'intelligence': '',
+        'social media prowess': '',
+        'bullshit-o-meter': '',
+        'fashion sense': ''
+    },
+    {
+        'name': 'Finn',
         'fighting ability': '',
         'scariness': '',
         'intelligence': '',
