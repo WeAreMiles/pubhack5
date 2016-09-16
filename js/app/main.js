@@ -36,18 +36,7 @@ function update() {
 
   if(player.collides(solid)){
       App.gameOver('HELLO');
-  }
-
-    // (function(solid) {
-    //     if (player.collides(solid)) {
-    //   App.gameOver('fuck you');
-    // }
-    // })();
-
-  // if(player.collideSolid(solid)){
-  //     App.gameOver('fuck you');
-  // }
-}
+  }s
 
 /**
  * A magic-named function where all drawing should occur.
